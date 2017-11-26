@@ -1,1 +1,4 @@
-## creating mi
+## creating redux
+- create store 
+- Apply middleware
+- provider
