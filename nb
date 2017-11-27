@@ -2,3 +2,8 @@
 - create store 
 - Apply middleware
 - provider
+
+## react router update
+-react router is updated to react-router-dom
+-link requires BrowserRouter to work
+- match changed to route
