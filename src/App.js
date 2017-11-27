@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { Link, Route } from 'react-router-dom';
 import logo from './logo.svg';
+import GamePage from './GamePage'
 import './App.css';
 
 class App extends Component {
@@ -11,8 +13,9 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+            <Link to="games">Game</Link>
         </p>
+        <Route path = '/games' component = {GamePage} />
       </div>
     );
   }
