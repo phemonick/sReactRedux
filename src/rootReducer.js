@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import game from './reducers/game'
+import games from './reducers/game'
 export default combineReducers({
-    game
+    games
 })
