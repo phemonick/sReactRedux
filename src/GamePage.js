@@ -24,7 +24,7 @@ GamePage.propTypes = {
      fetchGames: PropTypes.func.isRequired
 }
 //takes state from redux store and pass to comp as props
-function mapStateToProps(state){
+const mapStateToProps = (state) => {
     return {
         games: state.games
     }
