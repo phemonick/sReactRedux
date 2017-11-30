@@ -1,6 +1,10 @@
-export default function games(state = [], action = {}) {
-    switch(action.type){
+ import { SET_GAMES } from '../actions'
 
+ const games = (state = [], action = {}) => {
+    switch(action.type){
+        case SET_GAMES:
+            return action.games;
         default: return state;
     }
 }
+export default games
