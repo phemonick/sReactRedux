@@ -1,7 +1,7 @@
 import React from 'react';
-
+import PropTypes from 'prop-types'
 //functional component
-export default function GameList({ games }) {
+const GameList = ({ games }) => {
     const emptyMessage = (
         <p> There are no games yet in your collection</p>
     );
@@ -16,5 +16,7 @@ export default function GameList({ games }) {
 }
 
 GameList.propTypes = {
-   
+   games: PropTypes.array.isRequired
 }
+
+export default GameList
