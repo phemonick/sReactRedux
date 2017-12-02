@@ -24,8 +24,8 @@ var GetGames = function () {
     _createClass(GetGames, null, [{
         key: 'get',
         value: function get(req, res) {
-            game.all().then(function (event) {
-                return res.status(200).send({ message: 'success', event: event });
+            game.all().then(function (games) {
+                return res.status(200).send({ games: games });
             }).catch(function (error) {
                 return res.status(200).send(error);
             });

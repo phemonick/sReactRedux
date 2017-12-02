@@ -12,9 +12,11 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use('/api', api);
 app.use((req, res, next) => {
-    let err = new Error('Not Found');
-    err.status = 404;
-    next(err);
+    res.status(404).json({
+      errors: {
+        global: "still working, please try again later"
+      }
+    })
   });
 
 const port = parseInt(process.env.PORT, 10) || 8080;
