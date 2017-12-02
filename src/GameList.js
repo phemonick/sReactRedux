@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types'
-//functional component
+//functional component games= props
 const GameList = ({ games }) => {
     const emptyMessage = (
         <p> There are no games yet in your collection</p>
