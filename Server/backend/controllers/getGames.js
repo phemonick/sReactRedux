@@ -4,7 +4,7 @@ const game = db.Games;
 class GetGames{
 
     static get(req, res){
-        game.all().then(event => res.status(200).send({ event }))
+        game.all().then(games => res.status(200).send({ games }))
         .catch(error => res.status(200).send(error));
 
     }
